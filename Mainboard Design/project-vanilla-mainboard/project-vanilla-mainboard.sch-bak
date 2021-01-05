@@ -918,7 +918,7 @@ SW15
 Text GLabel 9200 4350 0    50   Input ~ 0
 SW16
 Text Notes 550  7700 0    50   ~ 10
-FatFreeMilk's Project Vanilla\n(Arcade Button MIDI Controller)\nUsed via CC-BY-SA:\nhttps://www.arduino.cc/en/Main/Arduino_BoardLeonardo\nhttps://store.arduino.cc/usa/arduino-micro\nhttps://www.sparkfun.com/products/12640\nhttps://github.com/aspro648/Leonardo
+FatFreeMilk's Project Vanilla\n(Arcade Button MIDI Controller)\nUsed via CC-BY-SA:\nhttps://www.arduino.cc/en/Main/Arduino_BoardLeonardo\nhttps://www.arduino.cc/en/Main/Arduino_BoardMicro\nhttps://www.sparkfun.com/products/12640\nhttps://github.com/aspro648/Leonardo
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5FF0603F
