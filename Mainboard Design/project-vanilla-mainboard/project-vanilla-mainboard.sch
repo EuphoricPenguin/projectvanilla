@@ -137,17 +137,6 @@ F 3 "" H 3700 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:USB_B J2
-U 1 1 5FF3196E
-P 1050 4400
-F 0 "J2" H 1107 4867 50  0000 C CNN
-F 1 "USB_B" H 1107 4776 50  0000 C CNN
-F 2 "" H 1200 4350 50  0001 C CNN
-F 3 " ~" H 1200 4350 50  0001 C CNN
-	1    1050 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5FF36025
 P 1050 4800
@@ -160,9 +149,6 @@ F 3 "" H 1050 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	950  4800 1050 4800
-Connection ~ 1050 4800
-Wire Wire Line
-	1400 4050 1400 4100
 Wire Wire Line
 	1400 4200 1350 4200
 $Comp
@@ -1155,57 +1141,14 @@ Wire Wire Line
 $Comp
 L Power_Protection:TPD3E001DRLR U2
 U 1 1 60054A8D
-P 1950 4600
-F 0 "U2" H 1950 4875 50  0000 C CNN
-F 1 "TPD3E001DRLR" H 1950 4966 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-553" H 1250 4300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tpd3e001.pdf" H 1750 4850 50  0001 C CNN
-	1    1950 4600
-	-1   0    0    1   
+P 2050 4500
+F 0 "U2" H 2050 4775 50  0000 C CNN
+F 1 "TPD3E001DRLR" H 2050 4866 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-553" H 1350 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd3e001.pdf" H 1850 4750 50  0001 C CNN
+	1    2050 4500
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 4100 2400 4100
-Connection ~ 1400 4100
-Wire Wire Line
-	1400 4100 1400 4200
-Wire Wire Line
-	2400 4600 2350 4600
-Wire Wire Line
-	2400 4100 2400 4600
-Wire Wire Line
-	1350 4500 1400 4500
-Wire Wire Line
-	1400 4500 1400 4700
-Wire Wire Line
-	1400 4700 1550 4700
-Wire Wire Line
-	1350 4400 1450 4400
-Wire Wire Line
-	1450 4400 1450 4600
-Wire Wire Line
-	1450 4600 1550 4600
-Text GLabel 1400 5000 2    50   Output ~ 0
-D+
-Text GLabel 1400 5100 2    50   Output ~ 0
-D-
-Wire Wire Line
-	1550 4700 1550 4850
-Wire Wire Line
-	1550 4850 1250 4850
-Wire Wire Line
-	1250 4850 1250 5100
-Wire Wire Line
-	1250 5100 1400 5100
-Connection ~ 1550 4700
-Wire Wire Line
-	1550 4600 1550 4650
-Wire Wire Line
-	1550 4650 1300 4650
-Wire Wire Line
-	1300 4650 1300 5000
-Wire Wire Line
-	1300 5000 1400 5000
-Connection ~ 1550 4600
 Text GLabel 3650 3150 0    50   Input ~ 0
 D+
 Text GLabel 3650 3250 0    50   Input ~ 0
@@ -1226,16 +1169,14 @@ Connection ~ 2450 1750
 $Comp
 L power:GND #PWR0128
 U 1 1 60167591
-P 1950 4000
-F 0 "#PWR0128" H 1950 3750 50  0001 C CNN
-F 1 "GND" H 1955 3827 50  0000 C CNN
-F 2 "" H 1950 4000 50  0001 C CNN
-F 3 "" H 1950 4000 50  0001 C CNN
-	1    1950 4000
-	-1   0    0    1   
+P 2050 5050
+F 0 "#PWR0128" H 2050 4800 50  0001 C CNN
+F 1 "GND" H 2055 4877 50  0000 C CNN
+F 2 "" H 2050 5050 50  0001 C CNN
+F 3 "" H 2050 5050 50  0001 C CNN
+	1    2050 5050
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 4000 1950 4300
 Wire Wire Line
 	3600 1250 3600 1300
 Connection ~ 3600 1250
@@ -1249,9 +1190,60 @@ Wire Wire Line
 	6100 2000 6150 2000
 Wire Wire Line
 	3650 2150 3700 2150
-NoConn ~ 1500 4300
+Connection ~ 1050 4800
+$Comp
+L Connector:USB_B J2
+U 1 1 5FF3196E
+P 1050 4400
+F 0 "J2" H 1107 4867 50  0000 C CNN
+F 1 "USB_B" H 1107 4776 50  0000 C CNN
+F 2 "" H 1200 4350 50  0001 C CNN
+F 3 " ~" H 1200 4350 50  0001 C CNN
+	1    1050 4400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1550 4500 1500 4500
+	1400 4050 1400 4100
 Wire Wire Line
-	1500 4500 1500 4300
+	1350 4400 1650 4400
+Wire Wire Line
+	1350 4500 1650 4500
+Wire Wire Line
+	1650 4600 1550 4600
+NoConn ~ 1550 4600
+Wire Wire Line
+	1400 4100 1600 4100
+Wire Wire Line
+	1600 4100 1600 4000
+Wire Wire Line
+	1600 4000 2450 4000
+Wire Wire Line
+	2450 4000 2450 4500
+Connection ~ 1400 4100
+Wire Wire Line
+	1400 4100 1400 4200
+Wire Wire Line
+	2050 4800 2050 5050
+Wire Wire Line
+	1650 4400 1650 4350
+Wire Wire Line
+	1650 4350 1450 4350
+Connection ~ 1650 4400
+Wire Wire Line
+	1650 4500 1650 4550
+Wire Wire Line
+	1650 4550 1400 4550
+Wire Wire Line
+	1400 4550 1400 4750
+Wire Wire Line
+	1400 4750 1500 4750
+Connection ~ 1650 4500
+Wire Wire Line
+	1450 4350 1450 4200
+Wire Wire Line
+	1450 4200 1550 4200
+Text GLabel 1550 4200 2    50   Output ~ 0
+D+
+Text GLabel 1500 4750 2    50   Output ~ 0
+D-
 $EndSCHEMATC
