@@ -1,6 +1,6 @@
-update=1/2/2021 11:53:23 PM
+update=1/28/2021 3:51:06 PM
 version=1
-last_client=eeschema
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=ODO-layout.kicad_wks
 PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
