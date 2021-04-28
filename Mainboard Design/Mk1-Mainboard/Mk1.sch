@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Mk1 Mainboard"
 Date "2021-01-28"
-Rev "5"
+Rev "6"
 Comp ""
 Comment1 ""
 Comment2 ""
